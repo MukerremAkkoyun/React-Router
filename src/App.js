@@ -3,19 +3,19 @@ import './App.css';
 
 import { BrowserRouter as Router, Route, Link, NavLink , Redirect, Switch} from 'react-router-dom';
 
-//stateless component
-const News = ({ match }) => {
-	return(<h1>News page: { match.params.id }</h1>)
-};
+  //stateless component
+  const News = ({ match }) => {
+    return(<h1>News page: { match.params.id }</h1>)
+  };
 
 
-const Profile = () => {
-	return(<h1>Profile Page</h1>)
-};
+  const Profile = () => {
+    return(<h1>Profile Page</h1>)
+  };
 
-const Error = () => {
-	return(<h1>404</h1>)
-};
+  const Error = () => {
+    return(<h1>404</h1>)
+  };
 
 
 class App extends Component {
@@ -75,7 +75,7 @@ class App extends Component {
             )} />
 
             <Route component={Error} />
-            
+
           </Switch> 
 
         </div>
